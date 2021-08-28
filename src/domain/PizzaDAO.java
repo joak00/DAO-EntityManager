@@ -76,7 +76,8 @@ public class PizzaDAO implements IDAO<Pizza> {
     @Override
     public Optional<Pizza> select(UUID id) {
         Pizza pizza = new Pizza();
-        Pizza pizzaQuery = EntityManager
+        Pizza pizzaQuery = 
+        EntityManager
         .buildConnection(Configuration.getConfiguration())
         .addStatement(pizza, "SELECT id, name, url FROM pizza WHERE id = ?", (prStament, entity) -> {
             prStament.setBytes(1, UuidAdapter.getBytesFromUUID(id));
