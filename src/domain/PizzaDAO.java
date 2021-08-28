@@ -7,7 +7,6 @@ import core.EntityManager;
 import core.IDAO;
 import core.UuidAdapter;
 
-import java.sql.ResultSet;
 import java.util.Optional;
 import java.util.Set;
 
