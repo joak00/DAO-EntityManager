@@ -1,4 +1,4 @@
-package core;
+package domain;
 
 import java.util.UUID;
 import java.util.Optional;
