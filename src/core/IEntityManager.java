@@ -1,10 +1,6 @@
 package core;
 
-import java.sql.ResultSet;
-import java.util.Optional;
-
 import domain.Entity;
-
 
 public interface IEntityManager {
     
