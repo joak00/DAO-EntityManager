@@ -17,12 +17,14 @@ public class App {
         pizza.addIngredient(base);
 
         pizzaDao.insert(pizza);
-        //pizzaDao.insert(pizza2);
+        pizzaDao.insert(pizza2);
 
-        //pizza.setName("Pipiolina");
-        //pizzaDao.update(pizza);
+        pizza.setName("Pepperoni");
+        pizzaDao.update(pizza);
         
         System.out.println("Nombre: "+(pizzaDao.select(pizza.getId()).get().getName())+" - Url: "+pizzaDao.select(pizza.getId()).get().getUrl());
+        
+        //pizzaDao.delete(pizza);
        
     }
 }
